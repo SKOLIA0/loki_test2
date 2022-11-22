@@ -1,6 +1,6 @@
 require 'mysql2'
 
-client = Mysql2::Client.new(host: 'db09', username: 'loki', password: 'v4WmZip2K67J6Iq7NXC', database: 'applicant_tests')
+client = Mysql2::Client.new(host: 'db09', username: 'loki', password: '...', database: 'applicant_tests')
 results = client.query('select id, candidate_office_name from hle_dev_test_nikolaj_slepchenko;')
 
 results.each do |result|
